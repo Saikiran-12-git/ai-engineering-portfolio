@@ -4,6 +4,28 @@ An AI client can create and find engineering tasks and update their status throu
 the official Python MCP SDK. SQLite persists tasks across client sessions.
 This is a local, single-user stdio server, not a hosted service.
 
+## Development workflow
+
+Clone the development branch and enter the repository before running the setup
+commands below:
+
+```bash
+git clone --branch develop https://github.com/Saikiran-12-git/ai-engineering-portfolio.git
+cd ai-engineering-portfolio
+```
+
+For an existing clone, commit or stash any local edits before switching branches:
+
+```bash
+git fetch origin
+git switch develop
+git pull --ff-only origin develop
+```
+
+Make changes on `develop`, run the storage tests and MCP smoke test, and push to
+`develop`. When the changes are ready, open a pull request from `develop` to
+`main`. GitHub Actions runs the project checks on pushes and pull requests.
+
 ## Run and verify
 
 Python 3.12 is the tested runtime. From this project directory:
