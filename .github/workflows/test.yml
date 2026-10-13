@@ -5,9 +5,6 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: projects/01-mcp-task-manager
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
